@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+:root {
+  --primary-color: #31b6bf;
+  --secondary-color: #e7e7f1;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family:"Open Sans", sans-serif;
+}
+
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.container .card{
+    max-width: 400px;
+    text-align: center;
+    background-color: var(--extra-light);
+    padding: 2rem;
+    box-shadow: 10px 10px 50px #9ca3af;
+    border-radius: 5px;
+}
+
+.container .card nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .card nav span{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.container .card img{
+    max-width: 100px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.card h2{
+    color: var(--text-dark);  
+}
+.card p{
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.card .profile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.card .profile .number h5{
+    color: var(--text-light);
+}
+
+.card p.info{
+    margin-bottom: 2rem;
+}
+
+.card .socials {
+    margin-bottom: 2rem;
+}
+
+.card .socials span{
+    padding: 5px 8px;
+    background-color: red;
+    border-radius: 100%;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.card .socials span i{
+    color: var(--secondary-color);
+}
+.card .socials span.twitter{
+    background-color:#40b1f7 ;
+}
+.card .socials span.twitter:hover{
+    box-shadow: 0px 2px 5px #40b1f7;
+}
+.card .socials span.facebook{
+background-color:#3c5a9b ;
+}
+.card .socials span.facebook:hover{
+box-shadow: 0px 2px 5px #3c5a9b;
+}
+.card .socials span.gmail{
+background-color:#ff775d ;
+}
+.card .socials span.gmail:hover{
+box-shadow: 0px 2px 5px #ff775d;
+}
+.card .socials span.instagram{
+background-color:#1669fd ;
+}
+.card .socials span.instagram:hover{
+box-shadow: 0px 2px 5px #1669fd;
+}
+
+
+.card .submit{
+    background-color: var(--extra-light);
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: 1px solid var(--text-light);
+    color: var(--text-light);
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.card .submit:hover{
+    color: var(--extra-light);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0px 2px 10px #9ca3af;
+}
