@@ -68,3 +68,100 @@ body{
 .follow-btn:hover{
     background-color: var(--primary-color-dark);
 }
+.content{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--extra-light);
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-left h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+.content-left p{
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.content-left hr{
+    margin: 1rem 0;
+    width: 100%;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.followers{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-light);
+}
+.followers .count{
+    font-size: 1.5rem;
+}
+.followers .text{
+    font-size: 0.8rem;
+}
+.avatars img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin-right: -15px;
+}
+.content-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.feed-card{
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--text-light);
+}
+.feed{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.feed img{
+    width: 30px;
+}
+.feed h5{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px ;
+    color: var(--text-dark);
+}
+.social-icons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.social-icons .icon{
+    font-size: 0.8rem;
+    color: var(--text-light);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.social-icons .icon:hover{
+    color: var(--text-dark);
+}
+.feed:nth-child(1){
+    padding-bottom: 1rem;
+}
+.feed:nth-child(3){
+    padding-top: 1rem;
+}
+
