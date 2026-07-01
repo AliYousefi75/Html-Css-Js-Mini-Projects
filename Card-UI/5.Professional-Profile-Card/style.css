@@ -26,3 +26,45 @@ body{
     align-items: center;
     justify-content: center;
 }
+.profile-card {
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    position: relative;
+    height: 10rem;
+    background-image: url("./assets/wall2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header img{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: .5rem solid var(--extra-light);
+
+}
+.follow-btn{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    padding: .75rem 2rem;
+    font-size: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    cursor: pointer;
+    transition: .3s;
+
+}
+.follow-btn:hover{
+    background-color: var(--primary-color-dark);
+}
