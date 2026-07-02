@@ -1,0 +1,26 @@
+body{
+    font-family: calibri;
+}
+fieldset{
+    width:20%;
+    margin:20px auto;
+    border-radius: 10px;
+}
+legend{
+    text-align: center;
+}
+h2{
+    font-size: 36px;
+}
+input{
+    width: 150px;
+    float: right;
+}
+input[type=submit]{
+    width: 100px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
