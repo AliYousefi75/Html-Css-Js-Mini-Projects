@@ -20,3 +20,266 @@ body{
     line-height: 1.45;
     overflow: hidden;
 }
+.nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, rgba(8, 10, 14, .55), rgba(8, 10, 14, .35));
+    padding: clamp(0.5rem, 1vw + 0.2rem, 1rem) clamp(1rem, 2vw + 0.5rem, 3rem);
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+}
+.nav-inner {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.5rem, 1vw, 0.5rem);
+    color: var(--text);
+    text-decoration: none;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 700;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.75rem, 1vw, 1.5rem);
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    padding: .5rem .75rem;
+    font-size: clamp(0.9rem, 0.9vw, 1.05rem);
+    font-weight: 500;
+    color: var(--text);
+    transition: .2s;
+}
+.menu a:hover,
+.active {
+    text-shadow: 0 0 10px var(--text);
+}
+/* Search */
+.search {
+    position: relative;
+}
+.search input {
+    width: 100%;
+    padding: .6rem 2.5rem .6rem .75rem;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, .06);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    outline: none;
+}
+.search input::placeholder {
+    color: #b6c0c9;
+}
+.search button {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.search svg {
+    width: clamp(18px, 2vw, 24px);
+    height: clamp(18px, 2vw, 24px);
+    opacity: 0.8;
+}
+/* Button */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    transition: transform .15s, box-shadow .2s;
+
+}
+.nav-btn .btn,
+.hero-btns .btn {
+    display: flex;
+    align-items: center;
+    padding: .6rem 1rem;
+    font-size: clamp(0.9rem, 0.9vw, 1rem);
+    font-weight: 700;
+    color: #111;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-btn:hover,
+.hero-btns .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px -8px rgba(255, 255, 255, .55);
+}
+/* Hamburger */
+.menu-toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    width: clamp(40px, 6vw, 45px);
+    height: clamp(40px, 6vw, 45px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .06);
+    cursor: pointer;
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    transition: .25s;
+    content: "";
+    transition: transform .25s ease, top .25s ease, background .25s ease;
+    transform-origin: center;
+}
+.hamburger span::before {
+    position: absolute;
+    top: -6px;
+}
+.hamburger span::after {
+    position: absolute;
+    top: 6px;
+}
+/* HERO SECTION */
+.hero {
+    min-height: calc(100vh - clamp(60px, 5vw, 90px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-inner {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(1.75rem, 5vw, 3.2rem);
+    margin-bottom: clamp(12px, 2vw, 24px);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 1.5rem;
+    color: #d1d5db;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.hero .btn.primary,
+.hero .btn.secondary {
+    padding: clamp(8px, 1.5vw, 10px) clamp(20px, 2vw, 26px);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.hero .btn.primary {
+    background: var(--text);
+    color: #0a0f0a;
+}
+
+.hero .btn.secondary {
+    background: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background: rgba(8, 10, 14, 0.9);
+        backdrop-filter: blur(12px);
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: max-height .4s ease, opacity .4s ease, padding .4s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-bottom: 1px solid #b6c0c9;
+    }
+
+    .menu li a {
+        padding: 10px 0;
+    }
+
+    .menu .search,
+    .menu .nav-btn {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .menu-toggle:checked~.menu {
+        max-height: 100vh;
+        height: 100vh;
+        padding: 1.5rem 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-toggle:checked~.hamburger span {
+        background: transparent;
+    }
+
+    .menu-toggle:checked~.hamburger span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .menu-toggle:checked~.hamburger span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
