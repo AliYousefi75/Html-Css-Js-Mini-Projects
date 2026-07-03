@@ -1,25 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="" class="brand">
+          <span>NavBeauty</span>
+        </a>
 
+        <!-- Hamburgur -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+        </label>
+      </div>
+    </header>
 
+    <!-- Menu -->
+    <ul class="menu">
+      <li><a href="" class="active">Home</a></li>
+      <li><a href="#">Tutorials</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <form action="">
+        <input type="search" class="search" placeholder="Search…" required />
+        <button type="submit">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </form>
+      <button class="nav-btn"><a href="#" class="btn">Get Started</a></button>
+    </ul>
 
     <!--    HERO SECTION -->
-        <section class="hero-inner">
-            <h1>Build Beautiful Navbar with Pure CSS</h1>
-            <p>Create stunning, responsive designs without JavaScript. Explore modern techniques and design like a pro.
-            </p>
-            <div class="hero-btns">
-                <a href="#" class="btn primary">Get Started</a>
-                <a href="#" class="btn secondary">Learn More</a>
-            </div>
-        </section>
-</body>
+    <section class="hero-inner">
+      <h1>Build Beautiful Navbar with Pure CSS</h1>
+      <p>
+        Create stunning, responsive designs without JavaScript. Explore modern
+        techniques and design like a pro.
+      </p>
+      <div class="hero-btns">
+        <a href="#" class="btn primary">Get Started</a>
+        <a href="#" class="btn secondary">Learn More</a>
+      </div>
+    </section>
+  </body>
 </html>
