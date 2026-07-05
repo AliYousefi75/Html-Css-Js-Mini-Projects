@@ -101,5 +101,19 @@ body{
     border-radius: 20px;
     outline: none;
     border: none;
-
+}
+.card-container .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+    color: #333;
+}
+.card-container .footer .data{
+    border-right: 2px solid #e7e7e7;
+    padding: 0 20px;
+    vertical-align: center;
+}
+.card-container .footer .data:last-child{
+    border-right: none;
 }
