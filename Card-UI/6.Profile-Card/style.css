@@ -55,7 +55,7 @@ body{
     align-items: center;
     border-radius: 50%;
     border: 0.5rem solid var(--extra-light);
-    transition: 0.5;
+    transition: 0.5s;
 }
 .image img{
     height: 100%;
@@ -80,4 +80,17 @@ body{
 }
 .socials span:hover{
     scale: 1.1;
+}
+
+
+/* On hover styles */
+.card:hover  .holder::before{
+    background-color: var(--secondary-color);
+}
+.card:hover .image{
+    scale: 0.75;
+}
+
+.card:hover .socials{
+    bottom: 0;
 }
