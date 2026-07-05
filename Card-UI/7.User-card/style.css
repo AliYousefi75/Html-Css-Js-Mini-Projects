@@ -87,3 +87,19 @@ body{
 .main .socials a i{
     color: white;
 }
+.main .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.main .btns button{
+    background-color: #4070f4;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+}
