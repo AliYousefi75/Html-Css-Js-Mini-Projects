@@ -60,3 +60,24 @@ body{
 .image img{
     height: 100%;
 }
+.socials{
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    bottom: -45px;
+    transition: 0.5s;
+}
+.socials span{
+    font-size: 1.25rem;
+    color: var(--extra-light);
+    cursor: pointer;
+    transform: 0.3s;
+}
+.socials span:hover{
+    scale: 1.1;
+}
