@@ -10,3 +10,22 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+main{
+    padding-top: 40px;
+    display: flex;
+    gap: 16px;
+    max-width: 1174px;
+    margin: 0 auto;
+}
+
+main .images-section{
+    display: flex;
+    gap: 16px;
+}
+
+main aside{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
