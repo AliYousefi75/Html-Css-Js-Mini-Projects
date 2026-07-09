@@ -5,6 +5,9 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 
 - Landing Page
 - Card Design
+- Login & SignUp
+- Navigation bar
+- Chat-UI
 
 ## 🎯 Purpose
 
