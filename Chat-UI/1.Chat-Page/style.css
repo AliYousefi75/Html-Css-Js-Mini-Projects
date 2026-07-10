@@ -135,3 +135,21 @@ main .chat-container .messages .user-message img{
     border-radius: 50%;
     object-fit: cover;
 }
+
+main .chat-container .messages .ai-message{
+    margin-left: 56px;
+}
+
+main .chat-container .messages .ai-message p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+main .chat-container .messages .ai-message ol{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #000000;
+}
