@@ -164,3 +164,37 @@ main .chat-container .messages .ai-message ol{
     min-height: 190px;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.input-container input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 32px 40px;
+    font-size: 20px;
+    background: transparent;
+}
+.input-container input::placeholder{
+    color: #000000;
+}
+
+.input-container button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container button img{
+    width: 24px;
+    height: 24px;
+}
+.input-container button img:hover{
+    opacity: 0.9;
+}
