@@ -73,3 +73,31 @@ main .sidebar hr{
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 16px;
 }
+
+main .sidebar .chat-history{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 8px;
+}
+main .sidebar .chat-history .chat-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+main .sidebar .chat-history .chat-item:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+main .sidebar .chat-history .chat-item img{
+    width: 24px;
+    height: 24px;
+}
+main .sidebar .chat-history .chat-item span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
