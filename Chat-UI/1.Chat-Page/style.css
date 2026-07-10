@@ -10,3 +10,66 @@ body{
     font-family: "Inter", sans-serif;
     background-color: #f7f3f3;
 }
+
+main{
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1512px;
+    height: 100vh;
+}
+
+main .sidebar{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main .sidebar .sidebar-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sidebar .sidebar-top .new-chat-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #a300e4;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor:pointer;
+    margin-bottom: 4px;
+    width: fit-content;
+}
+
+main .sidebar .sidebar-top .new-chat-btn img{
+    width: 16px;
+    height: 16px;
+}
+
+main .sidebar .sidebar-top .search-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+main .sidebar h1{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+main .sidebar hr{
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 16px;
+}
