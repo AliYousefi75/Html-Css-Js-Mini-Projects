@@ -51,3 +51,9 @@ img {
   margin-inline: 1.5rem;
   padding-block: 7rem;
 }
+.card-article{
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
