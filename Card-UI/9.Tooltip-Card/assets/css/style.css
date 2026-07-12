@@ -189,3 +189,11 @@ card-image {
   pointer-events: initial;
   bottom: 4rem;
 }
+
+/* breakpoints */
+@media screen and (min-width: 540px) {
+  .card-content {
+    width: 380px;
+    padding-inline: 2rem;
+  }
+}
