@@ -85,3 +85,25 @@ img {
   pointer-events: none;
   opacity: 0;
 }
+.card-content {
+  position: relative;
+  width: calc(100vw - 3rem);
+  background-color: var(--container-color);
+  box-shadow: 0 16px 32px hsla(230, 50%, 20%, .1);
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.card-content::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: var(--container-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -.75rem;
+  margin-inline: auto;
+  border-radius: .25rem;
+  rotate: 45deg;
+}
