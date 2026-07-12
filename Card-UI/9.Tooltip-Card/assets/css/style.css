@@ -77,3 +77,11 @@ img {
   z-index: 5;
   transition: opacity .4s, transform .4s;
 }
+.card-tooltip {
+  position: absolute;
+  bottom: -2rem;
+  padding-bottom: 5rem;
+  transition: opacity .4s, bottom .4s cubic-bezier(.6, -.5, .3, 1.5);
+  pointer-events: none;
+  opacity: 0;
+}
