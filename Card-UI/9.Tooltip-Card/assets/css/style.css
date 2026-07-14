@@ -121,17 +121,17 @@ img {
   color: var(--title-color);
   font-weight: 500;
 }
-.card-social {
+.card-socials {
   display: flex;
   column-gap: .75rem;
 }
 
-.card-social a {
+.card-socials a {
   font-size: 1.25rem;
   color: var(--title-color);
 }
 
-card-image {
+.card-image {
   width: 100px;
   height: 100px;
   position: relative;
