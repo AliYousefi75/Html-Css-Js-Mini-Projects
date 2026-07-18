@@ -87,3 +87,34 @@ function startQuiz() {
 
   showQuestion();
 }
+
+
+
+function showQuestion() {
+  // reset state
+  answersDisabled = false;
+
+  const currentQuestion = quizQuestions[currentQuestionIndex];
+
+  currentQuestionSpan.textContent = currentQuestionIndex + 1;
+
+  const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100;
+  progressBar.style.width = progressPercent + "%";
+
+  questionText.textContent = currentQuestion.question;
+
+  answersContainer.innerHTML = "";
+
+  currentQuestion.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.textContent = answer.text;
+    button.classList.add("answer-btn");
+
+    // what is dataset? it's a property of the button element that allows you to store custom data
+    button.dataset.correct = answer.correct;
+
+    button.addEventListener("click", selectAnswer);
+
+    answersContainer.appendChild(button);
+  });
+}
