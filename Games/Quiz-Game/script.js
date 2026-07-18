@@ -176,3 +176,9 @@ function showResults() {
     resultMessage.textContent = "Keep studying! You'll get better!";
   }
 }
+
+function restartQuiz() {
+  resultScreen.classList.remove("active");
+
+  startQuiz();
+}
