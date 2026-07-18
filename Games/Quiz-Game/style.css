@@ -14,7 +14,7 @@ body{
     padding: 1rem;
     font-family: sans-serif;
 }
-
+/* container */
 .container{
     background-color: white;
     border-radius: 1rem;
@@ -60,6 +60,7 @@ body{
     color: #666;
     margin-bottom: 1px;
 }
+/* answer */
 .answers-container{
     display: flex;
     flex-direction: column;
@@ -139,7 +140,6 @@ button:hover{
 
     .screen{
         padding: 1rem;
-
     }
     #start-screen h1{
         font-size: 2rem;
