@@ -32,6 +32,7 @@ main{
 }
 .footer a{
     cursor: pointer;
+    text-decoration: none;
 }
 .footer a i{
     color: rgb(114, 116, 116);
