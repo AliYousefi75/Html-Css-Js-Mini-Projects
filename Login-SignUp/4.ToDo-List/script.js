@@ -45,3 +45,17 @@ function createListItem(itemValue){
     return item
 
 }
+
+searchInput.addEventListener('input',(e)=>{
+    if(document.querySelector('#emptyMsg')){
+        return
+    }
+    Array.from(list.children).forEach(element=>{
+        if(element.querySelector('p').innerText.toLowerCase().includes(e.target.value.toLowerCase())){
+            element.style.display = 'flex'
+        }else{
+            element.style.display = 'none'
+        }
+    })
+})
+
