@@ -54,8 +54,8 @@ h2{
     border-radius: 5px;
     border: none;
 }
-.data:last-child{
-    margin-bottom: 50px;
+main{
+    margin-bottom: 30px;
 }
 .bottom{
     width: 100%;
@@ -73,6 +73,7 @@ h2{
     border: 3px solid #2980b9;
     font-size: 1.2rem;
     font-family: Impact;
-
-
+}
+button{
+    cursor: pointer;
 }
