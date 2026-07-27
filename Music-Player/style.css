@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+}
+.music-player{
+    max-width: 350px;
+    margin: 0px auto;
+    height:50vh ;
+}
+#music-name{
+    font-family: Impact;
+    margin:40px 0px;
+    color: white;
+}
+#music-cover{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 38px -10px #2980b9;
+    animation: glow .5s ease-in-out infinite alternate;
+    animation-play-state: paused;
+
+}
+@keyframes glow {
+    from{
+        box-shadow: 0px 0px 38px -10px #ff1515;
+    }
+    to{
+        box-shadow: 0px 0px 38px 10px #ff1515;
+    }
+    /* 2980b9  */
+}
+#music-time{
+    width: 100%;
+    height: 2px;
+    appearance: none;
+    background-color: rgba(255,255,255,.2);
+    margin: 40px 0px;
+    cursor: pointer;
+}
+
+#music-time::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#music-time::-moz-range-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#btns i{
+    color: white;
+    font-size: 2em;
+    margin: 0px 20px;
+    cursor: pointer;
+}
