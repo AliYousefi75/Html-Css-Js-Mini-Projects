@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class='container'>
         <h1>Job Application Form</h1>
         <form>
-            <label for='name'>Full Name:</label>
+            <label class="labels" for='name'>Full Name:</label>
             <input id='name' type='text'/>
-            <label for='email'>
+            <label class="labels" for='email'>
                 Email:</label>
             <input id='email' type='email'/>
 
-            <label for='position'>Position:</label>
+            <label class="labels" for='position'>Position:</label>
             <select id='position'>
                 <option>Developer</option>
                 <option>Designer</option>
@@ -29,11 +30,11 @@
                 <input id='part-time' type='radio' name='availability'/>
                 <label for='part-time'>Part-Time</lebel>
             </fieldset>
-            <label for="message">Why do you want this job?</label>
+            <label class="labels" for="message">Why do you want this job?</label>
             <textarea id="message">
 
             </textarea>
-            <button type="submit"></button>
+            <button type="submit">Submit Application</button>
         </form>
     </div>
 </body>
