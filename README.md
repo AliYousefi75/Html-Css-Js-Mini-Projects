@@ -8,6 +8,9 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 - Login & SignUp
 - Navigation bar
 - Chat-UI
+- Form
+- Game
+- Music-Player
 
 ## 🎯 Purpose
 
@@ -17,6 +20,7 @@ The goal of this repository is to improve my HTML and CSS skills by building sma
 
 - HTML5
 - CSS3
+- JavaScript
 
 ## 🚀 Status
 
