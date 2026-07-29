@@ -84,3 +84,7 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+
+textarea::placeholder{
+    color: #666;
+}
