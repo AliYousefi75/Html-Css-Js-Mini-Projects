@@ -24,13 +24,24 @@
                 <option>Manager</option>
             </select>
 
-            <fieldset class='radio-group'>
+            <!-- <fieldset class='radio-group'>
                 <legend>Availability</legend>
                 <input id='full-time' type='radio' name='availability'/>
-                <label for='full-time'>Full-Time</lebel>
+                <label for='full-time'>Full-Time</label>
                 <input id='part-time' type='radio' name='availability'/>
-                <label for='part-time'>Part-Time</lebel>
+                <label for='part-time'>Part-Time</label>
+            </fieldset> -->
+
+            <fieldset class="radio-group">
+              <legend>Availability:</legend>
+                <input type="radio" id="fullTime" name="availability" value="fullTime" checked="">
+                <label for="fullTime">Full-Time</label>
+                <input type="radio" id="partTime" name="availability" value="partTime">
+                <label for="partTime">Part-Time</label>
             </fieldset>
+
+
+
             <label class="labels" for="message">Why do you want this job?</label>
             <textarea id="message">
 
