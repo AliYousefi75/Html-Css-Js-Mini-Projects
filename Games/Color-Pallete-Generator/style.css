@@ -63,3 +63,54 @@ h1::after{
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(102, 126, 234, 0.3);
 }
+
+#generate-btn:active {
+  transform: translateY(0);
+}
+
+.palette-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(aut-fit,minmax(130px,1fr));
+}
+
+.color-box {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.color-box:hover {
+  transform: translateY(-5px);
+}
+
+.color {
+  height: 120px;
+  cursor: pointer;
+}
+
+.color-info {
+  background-color: #fff;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.hex-value {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.copy-btn {
+  cursor: pointer;
+  color: #64748b;
+  transition: color 0.2s;
+}
+
+.copy-btn:hover {
+  color: #667eea;
+}
+
