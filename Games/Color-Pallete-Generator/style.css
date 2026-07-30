@@ -114,3 +114,9 @@ h1::after{
   color: #667eea;
 }
 
+
+@media (max-width: 768px) {
+  .palette-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
