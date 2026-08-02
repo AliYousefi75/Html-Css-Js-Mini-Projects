@@ -14,3 +14,11 @@ for(const list of lists){
     list.addEventListener('dragleave',dragLeave);
     list.addEventListener('drop',dragDrop);
 }
+
+function dragStart(e){
+    e.dataTransfer.setData('text/plain',this.id);
+}
+
+function dragEnd(e){
+    e.preventDefault();
+}
