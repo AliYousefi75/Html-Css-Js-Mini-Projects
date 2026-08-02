@@ -20,5 +20,25 @@ function dragStart(e){
 }
 
 function dragEnd(e){
+    console.log('drag ended')
+}
+
+function dragOver(e){
     e.preventDefault();
+}
+
+function dragEnter(e){
+    e.preventDefault();
+    this.classList.add('over')
+}
+
+function dragLeave(e){
+    this.classList.remove('over')
+}
+
+function dragDrop(e){
+    const id = e.dataTransfer.getData('text/plain');
+    const card = document.getElementById(id)
+    this.appendChild(card)
+    this.classList.remove('over')
 }
