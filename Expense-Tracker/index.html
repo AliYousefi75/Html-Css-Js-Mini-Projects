@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <section class="middle">
+            <div class="balace-card">
+                <p class="balance-title">Your Balance</p>
+                <p class="your-balance"></p>
+                <div class="cards">
+                    <div class="income">
+                        <p class="income-title">Income</p>
+                        <p class="income-number"></p>
+                    </div>
+                    <div class="expenses">
+                        <p class="expenses-title">Expenses</p>
+                        <p class="expenses-number"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom">
+            <div class="left">
+                <h2>Transactions</h2>
+                <div class="transaction">
+                    <p class="tra-tilte"></p>
+                    <p class="tra-price"></p>
+                </div>
+            </div>
+
+            <div class="right">
+                <form action="">
+                    <h2>Add Transaction</h2>
+                    <label for="description">Description</label>
+                    <input id="description" type="text">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number">
+                    <p class="tip">Use negative (-) for expenses</p>
+
+                    <button>Add Transaction</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
