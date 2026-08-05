@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(130deg , rgb(71, 42, 236) ,rgb(12, 238, 132));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+h1{
+    color: brown;
+}
+
+label{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(60, 86, 87);
+}
+
+.form-container{
+    width: 350px;
+    background:linear-gradient(145deg , rgb(248, 240, 240),rgb(194, 195, 196));
+    padding:30px;
+    border-radius: 10px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+    padding:7px;
+    border-radius: 5px;
+    border-color: rgb(248, 241, 255) ;
+    
+}
+input:focus , textarea:focus{
+    outline:none;
+}
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(189, 181, 197) ;
+}
+
+button{
+    margin-top:20px;
+    padding: 8px 20px;
+    background:linear-gradient(89deg, rgb(82, 133, 48),rgb(137, 224, 22)) ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-2px);
+}
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
