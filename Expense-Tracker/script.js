@@ -21,8 +21,8 @@ function addTransaction(e) {
 
     transactions.push({
         id:Date.now(),
-        description = description,
-        amount = amount
+        description,
+        amount
     });
 
     //array ra be soorate yek reshteh json zakhire mikonad
@@ -86,3 +86,17 @@ function formatCurrency(number) {
     currency: "USD",
   }).format(number);
 }
+
+function removeTransaction(id) {
+  // filter out the one we wanted to delete
+  transactions = transactions.filter((transaction) => transaction.id !== id);
+
+  localStorage.setItem("transcations", JSON.stringify(transactions));
+
+  updateTransactionList();
+  updateSummary();
+}
+
+// initial render
+updateTransactionList();
+updateSummary();
