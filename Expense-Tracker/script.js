@@ -91,7 +91,7 @@ function removeTransaction(id) {
   // filter out the one we wanted to delete
   transactions = transactions.filter((transaction) => transaction.id !== id);
 
-  localStorage.setItem("transcations", JSON.stringify(transactions));
+  localStorage.setItem("transactions", JSON.stringify(transactions));
 
   updateTransactionList();
   updateSummary();
