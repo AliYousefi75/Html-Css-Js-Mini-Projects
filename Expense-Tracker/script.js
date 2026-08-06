@@ -61,3 +61,21 @@ function createTransactionElement(transaction){
 
     return li;
 }
+
+function updateSummary() {
+  // 100, -50, 200, -200 => 50
+  const balance = transactions.reduce((acc, transaction) => acc + transaction.amount, 0);
+
+  const income = transactions
+    .filter((transaction) => transaction.amount > 0)
+    .reduce((acc, transaction) => acc + transaction.amount, 0);
+
+  const expenses = transactions
+    .filter((transaction) => transaction.amount < 0)
+    .reduce((acc, transaction) => acc + transaction.amount, 0);
+
+  // update ui => todo: fix the formatting
+  balanceEl.textContent = formatCurrency(balance);
+  incomeAmountEl.textContent = formatCurrency(income);
+  expenseAmountEl.textContent = formatCurrency(expenses);
+}
