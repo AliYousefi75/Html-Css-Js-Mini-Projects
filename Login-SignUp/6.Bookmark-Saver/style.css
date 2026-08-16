@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container{
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(252, 244, 244);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0 ,0,0,0.2);
+
+}
+h1{
+    color: rgb(2, 122, 2);
+    margin-bottom: 10px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+}
+#add-bookmark{
+    padding: 8px;
+    color: white;
+    background-color: rgb(2, 122, 2);
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+#bookmark-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    list-style-type: none;
+    background-color: rgb(253, 225, 225);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+#title{
+    color: rgb(2, 122, 2);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#remove{
+    padding:0px 10px;
+    border: none;
+    color: white;
+    background-color: rgb(233, 3, 3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
