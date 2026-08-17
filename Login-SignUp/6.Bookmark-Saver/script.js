@@ -25,3 +25,23 @@ addBookmarkBtn.addEventListener('click',function(){
     }
 });
 
+
+function addBookmark(name,url){
+    const li = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = url;
+    link.textContent = name;
+    link.target ='_blank';
+
+    const removedButton = document.createElement('button');
+    removedButton.textContent = 'Remove';
+    removedButton.addEventListener('click',()=>{
+        bookmarkList.removeChild(li);
+        removeBookmarkFromStorage(name,url);
+    });
+
+    li.appendChild(link);
+    li.appendChild(removedButton);
+    bookmarkList.appendChild(li);
+
+}
