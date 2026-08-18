@@ -49,3 +49,9 @@ function getBookmarksFromStorage(){
     const bookmarks = localStorage.getItem('bookmarks');
     return bookmarks ? JSON.parse(bookmarks) :[];
 }
+
+function saveBookmark(name,url){
+    const bookmarks = getBookmarksFromStorage();
+    bookmarks.push({name,url});
+    localStorage.setItem('bookmarks',JSON.stringify(bookmarks))
+}
