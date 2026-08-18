@@ -13,7 +13,7 @@ addBookmarkBtn.addEventListener('click',function(){
         alert('please enter both name and url');
         return;
     }else{
-        if(!url.startWith('http://') && !url.startWith('https://')){
+        if(!url.startsWith('http://') && !url.startsWith('https://')){
             alert('please enter a valid url starting with http:// or https://');
             return;
         }
@@ -59,4 +59,10 @@ function saveBookmark(name,url){
 function loadBookmarks(){
     const bookmarks = getBookmarksFromStorage();
     bookmarks.forEach((bookmark)=>addBookmark(bookmark.name,bookmark.url));
+}
+
+function removeBookmarkFromStorage(name,url){
+    let bookmarks = getBookmarksFromStorage();
+    bookmarks.filter((bookmark)=>bookmark.name !== name || bookmark.url !== url);
+    localStorage.setItem('bookmarks',JSON.stringify(bookmarks))
 }
