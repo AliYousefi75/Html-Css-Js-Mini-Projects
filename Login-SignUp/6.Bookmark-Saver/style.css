@@ -62,13 +62,14 @@ input{
     box-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
-#title{
+a{
     color: rgb(2, 122, 2);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
-#remove{
+button{
     padding:0px 10px;
     border: none;
     color: white;
