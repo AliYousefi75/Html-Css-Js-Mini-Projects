@@ -43,5 +43,9 @@ function addBookmark(name,url){
     li.appendChild(link);
     li.appendChild(removedButton);
     bookmarkList.appendChild(li);
+}
 
+function getBookmarksFromStorage(){
+    const bookmarks = localStorage.getItem('bookmarks');
+    return bookmarks ? JSON.parse(bookmarks) :[];
 }
