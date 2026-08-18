@@ -55,3 +55,8 @@ function saveBookmark(name,url){
     bookmarks.push({name,url});
     localStorage.setItem('bookmarks',JSON.stringify(bookmarks))
 }
+
+function loadBookmarks(){
+    const bookmarks = getBookmarksFromStorage();
+    bookmarks.forEach((bookmark)=>addBookmark(bookmark.name,bookmark.url));
+}
