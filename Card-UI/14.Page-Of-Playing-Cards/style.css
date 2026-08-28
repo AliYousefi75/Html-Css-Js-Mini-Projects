@@ -52,12 +52,28 @@ transform:rotate(180deg);
 .middle-side{
   text-align:center;
   font-weight:bold;
-  font-size:6rem
-
+  font-size:6rem;
 }
 
 .right-side{
   font-size:1.7rem;
   transform:rotate(180deg);
   margin-right:10px;
+}
+.heart{
+  color: red;
+  
+}
+.bottom-heart{
+  transform: rotate(180deg);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-heart{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
