@@ -64,14 +64,14 @@ transform:rotate(180deg);
   color: red;
   
 }
-.bottom-heart{
+.middle-bottom{
   transform: rotate(180deg);
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top-heart{
+.middle-top{
   height: 80px;
   display: flex;
   align-items: center;
