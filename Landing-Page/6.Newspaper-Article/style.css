@@ -1,0 +1,22 @@
+html {
+  font-size:24px;
+}
+.newspaper{
+  font-size:16px;
+  font-family:'Open Sans', sans-serif;
+}
+.name{
+  font-Size:2rem;
+  font-family:'Times New Roman', serif;
+  text-transform:uppercase;
+}
+.author{
+  text-transform:uppercase;
+}
+.headline{
+  font-size:2em;
+  font-weight:bold;
+}
+.sub-headline{
+  font-weight:100;
+}
