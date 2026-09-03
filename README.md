@@ -11,6 +11,8 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 - Form
 - Game
 - Music-Player
+- Banner
+- Admin Panel
 
 ## 🎯 Purpose
 
