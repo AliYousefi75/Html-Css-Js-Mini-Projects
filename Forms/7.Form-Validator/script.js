@@ -51,3 +51,16 @@ function checkEmail(email) {
     return false;
   }
 }
+
+function checkLength(input, min, max) {
+  if (input.value.length < min) {
+    showError(input, `${formatFieldName(input)} must be at least ${min} characters.`);
+    return false;
+  } else if (input.value.length > max) {
+    showError(input, `${formatFieldName(input)} must be less than ${max} characters.`);
+    return false;
+  } else {
+    showSuccess(input);
+    return true;
+  }
+}
