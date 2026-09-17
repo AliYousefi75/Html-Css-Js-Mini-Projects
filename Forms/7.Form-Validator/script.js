@@ -39,3 +39,15 @@ function checkPasswordsMatch(input1, input2) {
   }
   return true;
 }
+
+function checkEmail(email) {
+  // Email regex that covers most common email formats
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailRegex.test(email.value.trim())) {
+    showSuccess(email);
+    return true;
+  } else {
+    showError(email, "Email is not valid");
+    return false;
+  }
+}
