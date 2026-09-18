@@ -93,3 +93,8 @@ function showError(input, message) {
   const small = formGroup.querySelector("small");
   small.innerText = message;
 }
+
+function showSuccess(input) {
+  const formGroup = input.parentElement;
+  formGroup.className = "form-group success";
+}
