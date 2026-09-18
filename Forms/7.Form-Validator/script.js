@@ -64,3 +64,19 @@ function checkLength(input, min, max) {
     return true;
   }
 }
+
+function checkRequired(inputArray) {
+  let isValid = true;
+
+  inputArray.forEach((input) => {
+    // Password is required
+    if (input.value.trim() === "") {
+      showError(input, `${formatFieldName(input)} is required`);
+      isValid = false;
+    } else {
+      showSuccess(input);
+    }
+  });
+
+  return isValid;
+}
