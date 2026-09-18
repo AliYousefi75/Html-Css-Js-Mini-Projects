@@ -86,3 +86,10 @@ function formatFieldName(input) {
   // input id: username -> Username
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
+
+function showError(input, message) {
+  const formGroup = input.parentElement;
+  formGroup.className = "form-group error";
+  const small = formGroup.querySelector("small");
+  small.innerText = message;
+}
