@@ -80,3 +80,9 @@ function checkRequired(inputArray) {
 
   return isValid;
 }
+
+// Format field name with proper capitalization
+function formatFieldName(input) {
+  // input id: username -> Username
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
