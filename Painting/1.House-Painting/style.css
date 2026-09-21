@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#b3e6ff,#b3e6ff 60%,green 60%);
+}
+#house{
+    flex: 0 0 auto;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-color: #ff9980;
+    border: 6px solid #b35900;
+}
+
+#chimney{
+    position: absolute;
+    width: 90px;
+    height: 100px;
+    top: -100px;
+    left: 65%;
+    background: repeating-linear-gradient(#e6e6e6 0, #e6e6e6 10%,black 10% , black 12%);
+    border: 2px solid black;
+    z-index: -1;
+}
