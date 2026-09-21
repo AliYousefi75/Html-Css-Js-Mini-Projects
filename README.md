@@ -14,6 +14,7 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 - Banner
 - Admin Panel
 - Character
+- Painting
 
 ## 🎯 Purpose
 
