@@ -64,3 +64,28 @@ body{
     );
     
 }
+
+#window-1, #window-2{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      to right,
+      #ffffb3,
+      #ffffb3 48%,
+      #b35900 48%,
+      #b35900 52%,
+      #ffffb3 52%,
+      #ffffb3 100%
+    );
+    position: absolute;
+    top: 40%;
+    border: 6px solid #b35900;
+}
+
+#window-1{
+    left: 7.5%;
+}
+
+#window-2{
+    right:7.5%;
+}
