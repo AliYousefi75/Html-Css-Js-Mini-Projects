@@ -30,6 +30,18 @@ body{
     z-index: -1;
 }
 
+#smoke{
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 -10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
 #roof{
     border: 2px;
     width:100%;
