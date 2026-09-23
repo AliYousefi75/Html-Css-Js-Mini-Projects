@@ -89,3 +89,24 @@ body{
 #window-2{
     right:7.5%;
 }
+
+#door{
+    position: absolute;
+    width: 130px;
+    height: 180px;
+    bottom: 0%;
+    left: 185px;
+    background-color: #e6e6e6;
+    border: 6px solid #b35900;
+    transform: translateY(6px);
+}
+
+#door-knob{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b35900;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
