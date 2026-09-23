@@ -110,3 +110,19 @@ body{
     top: 50%;
     right: 5%;
 }
+
+#welcome{
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    bottom: -47px;
+    left: 178px;
+    background-color: #85e085;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-20deg);
+}
