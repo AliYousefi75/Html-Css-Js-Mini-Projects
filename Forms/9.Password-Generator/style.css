@@ -34,3 +34,25 @@ body {
   width: 90%;
   max-width: 450px;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
