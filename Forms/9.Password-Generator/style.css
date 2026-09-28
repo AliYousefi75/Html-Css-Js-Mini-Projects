@@ -14,3 +14,23 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+
+body {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 450px;
+}
