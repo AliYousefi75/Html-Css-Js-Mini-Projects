@@ -81,3 +81,19 @@ h1::after {
   outline: none;
   border-radius: 10px;
 }
+
+#copy-btn {
+  cursor: pointer;
+  color: #718096;
+  font-size: 1.1rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#copy-btn:hover {
+  color: var(--primary-color);
+}
