@@ -56,3 +56,28 @@ h1::after {
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   border-radius: 2px;
 }
+
+.password-container {
+  margin-bottom: 2rem;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 0 0;
+}
+
+#password {
+  width: 100%;
+  padding: 1.1rem;
+  padding-right: 50px;
+  border: none;
+  background: transparent;
+  color: #4a5568;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 10px;
+}
