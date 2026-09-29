@@ -17,3 +17,13 @@ h1{
     font-size: 2em;
     font-weight: bold;
 }
+
+.table-container{
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100vw;
+}
+
