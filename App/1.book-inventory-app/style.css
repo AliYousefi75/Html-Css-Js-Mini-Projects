@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: block;
+    margin: 8px;
+}
+
+main{
+    display: block;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
