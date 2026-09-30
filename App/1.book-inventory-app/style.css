@@ -48,3 +48,22 @@ td{
     padding: 0.3em;
 }
 
+tr[class='read'] span[class='status'] {
+    border: 0.1em solid hsl(120, 75%, 45%);
+    background-image: linear-gradient(hsl(120, 75%, 75%), hsl(120, 75%, 50%));
+}
+
+span[class='status'], span[class^='rate']{
+    height: 1.85em;
+    width: 7em;
+    padding: 0.3em;
+}
+
+span[class='status']{
+    border-radius: 20% / 60%;
+}
+
+span{
+    display: inline-block;
+}
+
