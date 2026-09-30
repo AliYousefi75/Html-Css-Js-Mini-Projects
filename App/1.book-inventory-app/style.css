@@ -27,3 +27,24 @@ table{
     width: 100vw;
 }
 
+thead{
+    background-image: linear-gradient(hsl(197, 92%, 77%, 0.60), hsl(197, 92%, 50%, 0.60));
+}
+
+tr[class='read'] {
+    background-image: linear-gradient(hsl(120, 100%, 85%, 0.6), hsl(120, 100%, 65%, 0.6));
+}
+
+tr[class = 'to-read'] {
+    background-image: linear-gradient(hsl(120, 20%, 95%, 0.6), hsl(120, 20%, 75%, 0.6));
+}
+
+tr[class='in-progress'] {
+    background-image: linear-gradient(hsl(40, 100%, 85%, 0.60), hsl(40, 100%, 65%, 0.6));
+}
+
+td{
+    text-align: center;
+    padding: 0.3em;
+}
+
