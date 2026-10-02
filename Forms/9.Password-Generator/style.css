@@ -122,3 +122,17 @@ h1::after {
   color: #4a5568;
   font-weight: 500;
 }
+
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+
+input[type="range"] {
+  accent-color: var(--primary-color);
+  height: 5px;
+  cursor: pointer;
+  flex: 1;
+}
