@@ -136,3 +136,29 @@ input[type="range"] {
   cursor: pointer;
   flex: 1;
 }
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  appearance: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2714";
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
