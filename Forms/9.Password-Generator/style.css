@@ -231,3 +231,18 @@ button:active {
   transition: all 0.3s ease;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1.8rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .option label {
+    font-size: 0.9rem;
+  }
+}
