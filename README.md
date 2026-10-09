@@ -16,6 +16,7 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 - Character
 - Painting
 - App-UI
+- Table
 
 ## 🎯 Purpose
 
