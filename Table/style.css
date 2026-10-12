@@ -9,3 +9,16 @@ body{
     width: 100vw;
     height: 100vh;
 }
+
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    --color0: hsl(0, 0%, 100%);
+    --color1: hsl(120, 95%, 90%);
+    --color2: hsl(120, 95%, 80%);
+    --color3: hsl(120, 95%, 65%);
+    --color4: hsl(120, 95%, 40%);
+    --color5: hsl(120, 95% 95%,25%);
+    --solid-border: 0.1rem solid black;
+    --dashed-border: 0.09rem dashed black;
+}
