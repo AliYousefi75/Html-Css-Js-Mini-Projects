@@ -32,10 +32,10 @@ main{
     justify-content: space-evenly;
 }
 
-table{
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 32rem;
 }
 
 #legend{
