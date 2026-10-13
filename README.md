@@ -17,6 +17,7 @@ A collection of small HTML and CSS projects for practice and learning front-end 
 - Painting
 - App-UI
 - Table
+- Sidebar
 
 ## 🎯 Purpose
 
