@@ -67,11 +67,7 @@ table {
     background-image: linear-gradient(90deg, var(--color0) 0% 17%, var(--color1) 17% 34%, var(--color2) 34% 50%, var(--color3) 50% 67%, var(--color4) 67% 83%, var(--color5) 83% 100%);
 }
 
-/* tr{
-    height: 1.1rem;
-} */
-
-tr :first-child{
+tr:first-child{
     width: 4rem;
 }
 
