@@ -1,0 +1,56 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom:0 ;
+}
+img{
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.card{
+    width: 200px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    /* padding-left: 8px; */
+    margin-bottom: 4px;
+}
+.friends{
+    margin-left: 8px;
+    color: rgb(100,100,100);
+    margin-bottom: 12px;
+    
+}
+button{
+    padding: 10px 20px;
+    /* margin-left: 8px; */
+    margin-bottom: 10px;
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
+
+.info-left{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info-left>img{
+    width: 30px;
+    border-radius: 15px;
+}
+.info-right{
+    display: inline-block;
+    vertical-align: middle;
+}
+.bottom{
+    margin-left: 8px;
+}
