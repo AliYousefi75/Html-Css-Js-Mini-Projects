@@ -6,7 +6,21 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red,blue);
 }
+
+main{
+    padding: 30px;
+    border: 1px solid paleturquoise;
+    border-radius: 30px;
+    background-color:rgb(224, 197, 197);
+}
+
 p{
     font-size: 40px;
     margin-top: 10px;
