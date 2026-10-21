@@ -16,9 +16,9 @@ body{
 
 main{
     padding: 30px;
-    border: 1px solid paleturquoise;
     border-radius: 30px;
-    background-color:rgb(224, 197, 197);
+    background-color:rgb(129, 255, 203);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 
 p{
@@ -46,11 +46,13 @@ input{
     padding: 15px 25px;
     font-size: 16px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .later-button{
     background-color: rgb(240, 240, 240);
     border: none;
     padding: 15px 25px;
     font-size: 16px;
+    cursor: pointer;
 
 }
