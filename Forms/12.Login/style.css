@@ -1,4 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 *{
+    font-family: Poppins , sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,4 +15,28 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    color: white;
+    width: 420px;
+    height: 410px;
+    background: transparent;
+    backdrop-filter: blur(9px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
 }
