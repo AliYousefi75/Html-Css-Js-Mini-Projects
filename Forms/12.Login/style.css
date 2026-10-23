@@ -75,3 +75,20 @@ h1{
     transform: translate(-50%);
     font-size: 20px;
 }
+.remember-forgot{
+    margin:15px 0;
+    justify-content: space-between;
+    display: flex;
+    font-size: 14.5px; 
+}
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
