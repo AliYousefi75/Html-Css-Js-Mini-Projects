@@ -89,3 +89,30 @@ a {
   text-decoration: none;
 }
 
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.header__container {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__container::before {
+  content: "FITNESS";
+  position: absolute;
+  bottom: 5rem;
+  right: 20rem;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: var(--white);
+  opacity: 0.05;
+  z-index: -1;
+}
