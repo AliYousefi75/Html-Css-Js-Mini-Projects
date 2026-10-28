@@ -116,3 +116,14 @@ a {
   opacity: 0.05;
   z-index: -1;
 }
+
+.bg__blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px var(--secondary-color);
+  z-index: -1;
+}
+
+.header__blur {
+  bottom: 5rem;
+  right: 0;
+}
