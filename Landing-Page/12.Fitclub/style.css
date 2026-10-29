@@ -176,6 +176,15 @@ a {
   margin: auto;
 }
 
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+}
+
 .explore__header {
   display: flex;
   align-items: center;
@@ -202,4 +211,12 @@ a {
 .explore__nav span:hover {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+/* explore cards section */
+.explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
