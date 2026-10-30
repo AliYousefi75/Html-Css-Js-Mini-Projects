@@ -264,3 +264,9 @@ a {
 .explore__card a:hover {
   color: var(--secondary-color);
 }
+
+.class__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
