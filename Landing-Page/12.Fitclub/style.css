@@ -290,3 +290,17 @@ a {
   max-width: 300px;
   border-radius: 10px;
 }
+
+.class__content {
+  padding: 2rem 0;
+}
+
+.class__content .section__header {
+  text-align: left;
+  max-width: 400px;
+}
+
+.class__content p {
+  margin-bottom: 4rem;
+  color: var(--text-light);
+}
