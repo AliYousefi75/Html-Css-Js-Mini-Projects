@@ -270,3 +270,23 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
+.class__image {
+  position: relative;
+}
+
+.class__image .class__img-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.class__image .class__img-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 300px;
+  border-radius: 10px;
+}
