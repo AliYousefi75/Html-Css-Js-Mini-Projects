@@ -304,3 +304,12 @@ a {
   margin-bottom: 4rem;
   color: var(--text-light);
 }
+
+.join__image {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.join__image img {
+  border-radius: 10px;
+}
