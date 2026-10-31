@@ -313,3 +313,16 @@ a {
 .join__image img {
   border-radius: 10px;
 }
+
+.join__grid {
+  position: absolute;
+  bottom: -5rem;
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--primary-color-light);
+  border-radius: 10px;
+}
