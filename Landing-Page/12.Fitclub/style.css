@@ -359,3 +359,50 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+.price__card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-light);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.price__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.price__card__content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.price__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.price__card h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.price__card p {
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.price__card p i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
