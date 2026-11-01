@@ -406,3 +406,14 @@ a {
   font-size: 1.2rem;
   color: var(--secondary-color);
 }
+
+.price__btn {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+
+.price__btn:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
