@@ -353,6 +353,13 @@ a {
   color: var(--text-light);
 }
 
+.section__subheader {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: var(--text-light);
+}
+
 .price__grid {
   margin-top: 4rem;
   display: grid;
