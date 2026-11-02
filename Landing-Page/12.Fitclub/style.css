@@ -424,3 +424,18 @@ a {
   color: var(--white);
   background-color: var(--secondary-color);
 }
+
+.review {
+  background-color: var(--primary-color-light);
+}
+
+.review__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.review__container > span {
+  font-size: 6rem;
+  color: var(--secondary-color);
+  opacity: 0.5;
+}
