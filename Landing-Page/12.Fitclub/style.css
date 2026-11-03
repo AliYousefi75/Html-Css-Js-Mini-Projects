@@ -484,3 +484,15 @@ a {
 .review__member__details h4 {
   margin-bottom: 0;
 }
+
+.review__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review__nav span {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
