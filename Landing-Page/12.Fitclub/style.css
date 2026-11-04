@@ -496,3 +496,10 @@ a {
   color: var(--secondary-color);
   cursor: pointer;
 }
+
+.footer__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
