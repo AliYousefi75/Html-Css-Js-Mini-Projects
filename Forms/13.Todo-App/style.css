@@ -25,3 +25,12 @@ body {
   padding: 20px;
   color: var(--dark);
 }
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
