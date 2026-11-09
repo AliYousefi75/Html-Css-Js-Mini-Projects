@@ -89,3 +89,28 @@ header p {
 .todo-input button:hover {
   background-color: var(--primary-light);
 }
+
+.filters {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid var(--border);
+  padding: 15px 25px;
+}
+
+.filter {
+  padding: 5px 3px;
+  cursor: pointer;
+  color: var(--gray);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.filter:hover {
+  color: var(--primary);
+}
+
+.filter.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  font-weight: 500;
+}
