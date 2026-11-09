@@ -114,3 +114,9 @@ header p {
   border-bottom: 2px solid var(--primary);
   font-weight: 500;
 }
+
+.todos-container {
+  padding: 15px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
