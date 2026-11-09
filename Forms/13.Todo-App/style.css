@@ -120,3 +120,18 @@ header p {
   max-height: 300px;
   overflow-y: auto;
 }
+
+#todos-list {
+  list-style-type: none;
+}
+
+.todo-item {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background-color: var(--light);
+}
