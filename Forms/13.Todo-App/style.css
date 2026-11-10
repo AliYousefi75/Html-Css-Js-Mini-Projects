@@ -183,3 +183,13 @@ header p {
   text-decoration: line-through;
   color: var(--gray);
 }
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.2s;
+}
