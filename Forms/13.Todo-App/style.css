@@ -135,3 +135,7 @@ header p {
 .todo-item:hover {
   background-color: var(--light);
 }
+
+.checkbox-container {
+  margin-right: 15px;
+}
