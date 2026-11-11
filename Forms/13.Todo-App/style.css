@@ -234,3 +234,15 @@ footer {
 #items-left {
   color: var(--gray);
 }
+
+#clear-completed {
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#clear-completed:hover {
+  color: var(--danger);
+}
