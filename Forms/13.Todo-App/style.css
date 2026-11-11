@@ -220,3 +220,17 @@ header p {
 .hidden {
   display: none;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-top: 1px solid var(--border);
+  background-color: var(--light);
+  font-size: 14px;
+}
+
+#items-left {
+  color: var(--gray);
+}
