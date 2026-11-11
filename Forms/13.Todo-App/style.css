@@ -216,3 +216,7 @@ header p {
   margin-bottom: 10px;
   opacity: 0.7;
 }
+
+.hidden {
+  display: none;
+}
