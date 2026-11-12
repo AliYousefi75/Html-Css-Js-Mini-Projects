@@ -7,3 +7,40 @@ const clearCompletedBtn = document.getElementById("clear-completed");
 const emptyState = document.querySelector(".empty-state");
 const dateElement = document.getElementById("date");
 const filters = document.querySelectorAll(".filter");
+
+
+let todos = [];
+let currentFilter = "all";
+
+addTaskBtn.addEventListener("click", () => {
+  addTodo(taskInput.value);
+});
+
+function addTodo(text) {
+  if (text.trim() === "") return;
+
+  const todo = {
+    id: Date.now(),
+    text,
+    completed: false,
+  };
+
+  todos.push(todo);
+
+
+  taskInput.value = "";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
