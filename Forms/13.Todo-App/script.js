@@ -47,6 +47,12 @@ function updateItemsCount(){
     itemsLeft.textContent = `${uncompletedTodos?.length} item${uncompletedTodos?.length !==1 ?'s':''} left`
 }
 
+function checkEmptyState(){
+    const filteredTodos = filterTodos(currentFilter);
+    if(filteredTodos?.length === 0)emptyState.classList.remove('hidden');
+    else emptyState.classList.add('hidden');
+}
+
 
 
 
