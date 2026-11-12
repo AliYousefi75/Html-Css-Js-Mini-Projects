@@ -16,6 +16,10 @@ addTaskBtn.addEventListener("click", () => {
   addTodo(taskInput.value);
 });
 
+taskInput.addEventListener('keydown',(e)=>{
+    if(e.key === 'Enter') addTodo(taskInput.value);
+});
+
 function addTodo(text) {
   if (text.trim() === "") return;
 
