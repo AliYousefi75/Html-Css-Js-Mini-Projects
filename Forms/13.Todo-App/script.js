@@ -31,8 +31,14 @@ function addTodo(text) {
 
   todos.push(todo);
 
-
+  saveTodos();
   taskInput.value = "";
+}
+
+function saveTodos(){
+    localStorage.setItem('todos',JSON.stringify(todos));
+    updateItemsCount();
+    checkEmptyState();
 }
 
 
