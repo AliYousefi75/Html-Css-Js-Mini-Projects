@@ -107,6 +107,14 @@ function renderTodos() {
   });
 }
 
+clearCompletedBtn.addEventListener("click", clearCompleted);
+
+function clearCompleted() {
+  todos = todos.filter((todo) => !todo.completed);
+  saveTodos();
+  renderTodos();
+}
+
 
 
 
