@@ -65,6 +65,48 @@ function filterTodos(filter){
     }
 }
 
+function renderTodos() {
+  todosList.innerHTML = "";
+
+  const filteredTodos = filterTodos(currentFilter);
+
+  filteredTodos.forEach((todo) => {
+    const todoItem = document.createElement("li");
+    todoItem.classList.add("todo-item");
+    if (todo.completed) todoItem.classList.add("completed");
+
+    const checkboxContainer = document.createElement("label");
+    checkboxContainer.classList.add("checkbox-container");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add("todo-checkbox");
+    checkbox.checked = todo.completed;
+    checkbox.addEventListener("change", () => toggleTodo(todo.id));
+
+    const checkmark = document.createElement("span");
+    checkmark.classList.add("checkmark");
+
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(checkmark);
+
+    const todoText = document.createElement("span");
+    todoText.classList.add("todo-item-text");
+    todoText.textContent = todo.text;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
+    deleteBtn.addEventListener("click", () => deleteTodo(todo.id));
+
+    todoItem.appendChild(checkboxContainer);
+    todoItem.appendChild(todoText);
+    todoItem.appendChild(deleteBtn);
+
+    todosList.appendChild(todoItem);
+  });
+}
+
 
 
 
