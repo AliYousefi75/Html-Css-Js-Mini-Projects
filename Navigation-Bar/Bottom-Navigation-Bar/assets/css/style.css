@@ -1,0 +1,27 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap");
+
+
+/* Variables Css */
+:root{
+    /* colors */
+    --first-color: hsl(225, 95%, 56%);
+    --black-color: hsl(225, 12%, 12%);
+    --white-color: hsl(0, 0%, 100%);
+    --text-color: hsl(225, 8%, 65%);
+    --body-color: hsl(225, 100%, 99%);
+
+    /* fonts and typography */
+    --body-font: "Montserrat Alternates", sans-serif;
+    --biggest-font-size: 2.5rem;
+    --tiny-font-size: .625rem;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
