@@ -180,3 +180,9 @@ a {
 .nav__expand-link:hover {
   color: var(--white-color);
 }
+
+/* Show list */
+.show-list,
+.show-list li{
+  transform: translateY(0);
+}
