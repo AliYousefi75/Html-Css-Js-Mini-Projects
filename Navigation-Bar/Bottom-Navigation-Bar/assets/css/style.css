@@ -197,9 +197,17 @@ a {
   color: var(--white-color);
 }
 
-/* Breakpoints */
+/*--------- Breakpoints-------- */
+/* medium devices */
 @media screen and (min-width: 450px) {
   .nav {
     width: 350px;
+  }
+}
+
+/* large devices */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
   }
 }
