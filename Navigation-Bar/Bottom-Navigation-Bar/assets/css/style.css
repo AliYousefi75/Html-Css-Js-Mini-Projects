@@ -191,3 +191,8 @@ a {
 .rotate-icon {
   transform: rotate(135deg);
 }
+
+/* Active link */
+.active-link {
+  color: var(--white-color);
+}
