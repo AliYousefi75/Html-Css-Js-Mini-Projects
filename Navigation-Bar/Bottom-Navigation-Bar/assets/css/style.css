@@ -186,3 +186,8 @@ a {
 .show-list li{
   transform: translateY(0);
 }
+
+/* Rotate icon */
+.rotate-icon {
+  transform: rotate(135deg);
+}
