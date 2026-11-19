@@ -4,4 +4,10 @@ const navExpand = document.getElementById('nav-expand'),
       navExpandIcon = document.getElementById('nav-expand-icon')
 
 
-      
+      navExpand.addEventListener('click',()=>{
+        //Expand list
+        navExpandList.classList.toggle('show-list')
+
+        //Rotate icon
+        navExpandIcon.classList.toggle('rotate-icon')
+      })
