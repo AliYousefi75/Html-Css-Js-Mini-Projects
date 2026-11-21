@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --primay-color: #4ade80;
+  --primay-dark: #22c55e;
+  --bg-dark: #1a1a1a;
+  --text-light: #f3f4f6;
+  --text-gray: #9ca3af;
+  --card-bg: #252525;
+  --input-bg: #333;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
