@@ -67,3 +67,25 @@ p {
   gap: 20px;
   margin-bottom: 25px;
 }
+
+.input-field {
+  position: relative;
+}
+
+.message-field {
+  position: relative;
+}
+
+.input-field i,
+.message-field i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--primay-color);
+  font-size: 1.1rem;
+}
+
+.message-field i {
+  top: 25px;
+}
