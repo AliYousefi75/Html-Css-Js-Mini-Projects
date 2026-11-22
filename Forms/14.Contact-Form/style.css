@@ -49,3 +49,21 @@ body {
     transform: translateY(0);
   }
 }
+
+h1 {
+  color: var(--primay-color);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 30px;
+  color: var(--text-gray);
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
