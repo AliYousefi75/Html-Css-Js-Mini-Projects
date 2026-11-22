@@ -89,3 +89,33 @@ p {
 .message-field i {
   top: 25px;
 }
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  background-color: var(--input-bg);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primay-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-gray);
+}
