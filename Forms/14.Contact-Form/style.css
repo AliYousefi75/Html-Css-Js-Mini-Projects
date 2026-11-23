@@ -119,3 +119,33 @@ input::placeholder,
 textarea::placeholder {
   color: var(--text-gray);
 }
+
+button {
+  background-color: var(--primay-color);
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 16px 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primay-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 222, 128, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
