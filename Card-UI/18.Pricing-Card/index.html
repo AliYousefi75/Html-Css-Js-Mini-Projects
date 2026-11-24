@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Card</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,8 +12,67 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Choose Your Plan</h1>
+        <p>Select the perfect pricing plan for your needs</p>
+      </header>
+
+      <div class="pricing-cards">
+        <div class="card">
+            <!-- CARD HEADER -->
+          <div class="card-header">
+            <div class="plan-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Basic</h3>
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">9</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="description">Perfect for individuals and small projects</p>
+          </div>
+          <!-- CARD BODY -->
+          <div class="card-body">
+            <ul class="features">
+              <li><i class="fas fa-check"></i> 5 Projects</li>
+              <li><i class="fas fa-check"></i> 20GB Storage</li>
+              <li><i class="fas fa-check"></i> Basic Support</li>
+              <li><i class="fas fa-check"></i> Email Notifications</li>
+              <li class="disabled"><i class="fas fa-times"></i> Advanced Analytics</li>
+              <li class="disabled"><i class="fas fa-times"></i> Custom Domain</li>
+            </ul>
+          </div>
+          <!-- CARD FOOTER -->
+          <div class="card-footer">
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+
+        <diV class="card"></diV>
+        <div class="card"></div>
+        
+      </div>
+
+      <footer>
+        <i></i>
+        <p>
+          Switching to this service was one of the best decisions we've made.
+          The pricing is transparent and the features are exactly what we
+          needed.
+        </p>
+
+        <div class="user">
+          <img src="" alt="" />
+          <div class="user-info">
+            <h1 class="name">Sarah Johnson</h1>
+            <p class="position">Marketing Director</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
