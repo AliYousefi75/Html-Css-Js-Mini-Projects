@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* CSS variables */
+:root {
+  --primary-color: #4ade80;
+  --primary-dark: #22c55e;
+  --primary-light: #86efac;
+  --bg-dark: #1a1a1a;
+  --text-light: #f3f4f6;
+  --text-gray: #9ca3af;
+  --card-bg: #252525;
+  --card-hover: #2e2e2e;
+  --border-radius: 12px;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
