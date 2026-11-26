@@ -37,3 +37,25 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text; /* For  SAFARI*/
+  color: transparent;
+}
+
+header p {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
