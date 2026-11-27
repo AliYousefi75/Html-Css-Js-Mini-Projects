@@ -82,3 +82,9 @@ header p {
   box-shadow: var(--shadow-lg);
   background-color: var(--card-hover);
 }
+
+.card-header {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
